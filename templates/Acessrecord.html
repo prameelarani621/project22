@@ -7,14 +7,20 @@
 </head>
 <body>
     <center>
-        <h1>topic_name</h1>
+        <h1>acessrecord</h1>
         <table border="2px">
             <tr>
-                <th>topic_name</th>
+                <th>pk value</th>
+                <th>name</th>
+                <th>date</th>
+                <th>auther</th>
             </tr>
-            {% for to in topics %}
+            {% for Ao in AcessRecord %}
             <tr>
-                <td>{{to.topic_name}}</td>
+                <td>{{Ao.pk}}</td>
+                <td>{{Ao.name}}</td>
+                <td>{{Ao.date}}</td>
+                <td>{{Ao.auther}}</td>
             </tr>
             {% endfor %}
         </table>
